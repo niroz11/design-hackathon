@@ -1,0 +1,267 @@
+/* Styles********
+---------
+COLORS
+blue #055477
+light-blue #3fa2b0
+green #03bb8f
+light gray #e9e9e9
+dark gray #bcbcbc
+
+---------
+FONTS
+font-family: 'Open Sans', sans-serif;
+---------
+*****************/
+
+/* #region START Global Styles */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, p, span, ul, li {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.mainContent {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  height: 98%;
+  justify-content: space-between;
+}
+
+.boxesTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #endregion */
+
+
+
+/* #region START Header Styles */
+header {
+  width: 100%;
+  background: #3fa2b0;
+  box-shadow: 0px 0px 5px 0px #6b6b6b;
+}
+
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header h4 {
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3em
+}
+
+button {
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* #endregion */
+
+
+/* #region START Boxes Left Styles */
+.boxesLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goalsBox {
+  background-color: #055477;
+  border-radius: 5px;
+}
+
+.goalsBox h3 {
+  text-transform: uppercase;
+}
+
+ul.actionList {
+  color: #fff;
+}
+
+.actionBox {
+  background-color: #03bb8f;
+  border-radius: 5px;
+}
+
+.actionBox h3 {
+  text-transform: uppercase;
+}
+
+ul.actionList {
+  color: #fff;
+}
+
+ul.actionList li {
+  text-decoration: underline;
+}
+
+/* #endregion */
+
+
+
+/* #region START Boxes Right Styles */
+
+.boxesRight {
+  padding: 1em;
+}
+
+.calendarBox {
+  background: #055477;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 1em 1em;
+  border-radius: 5px;
+}
+
+.calControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calControls h2 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.calControls span {
+  color: #fff;
+}
+
+.calendar {
+  border-radius: 5px;
+  border: solid 1px #03bb8f;
+  display: flex;
+}
+
+.calColumn {
+  width: 20%;
+}
+
+.calColumn:nth-child(odd) {
+  background: #e9e9e9;
+}
+
+.calColumn:nth-child(even) {
+  background: #fff;
+}
+
+.calHead {
+  background: #bcbcbc;
+  text-align: center;
+}
+
+.calHead h3 {
+  color: #000;
+}
+
+.calBody {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.calBody:first-child, .calBody:last-child, {
+  justify-content: space-between;
+}
+
+.calBody:nth-child(2), .calBody:nth-child(4) {
+  justify-content: center;
+}
+
+.calBody:nth-child(3) {
+  justify-content: flex-start;
+}
+
+.actionCal {
+  display: flex;
+  flex-direction: column;
+}
+
+.actionCal div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.actionCal div img {
+  width: 100%;
+}
+
+.actionCal div h4 {
+  color: #000;
+}
+
+.actionCal p {
+  color: #000;
+}
+
+
+/* #endregion */
+
+
+/* #region START Boxes Bottom Styles */
+
+.boxesBottom {
+  background: #bcbcbc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftIcons {}
+
+.midIcons {}
+
+.rightIcons {}
+
+
+/* #endregion */
+
+
+
+/* #region START Media Queries Styles */
+
+@media only screen and (max-width: 600px) {
+  body {
+
+  }
+}
+
+
+/* #endregion */
