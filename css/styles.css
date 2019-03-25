@@ -47,13 +47,15 @@ h1, h2, h3, h4, p, span, ul, li {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  height: 98%;
+  height: 88%;
   justify-content: space-between;
 }
 
 .boxesTop {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  padding-bottom: 2em;
 }
 
 /* #endregion */
@@ -74,22 +76,47 @@ header section {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  padding: 1.5em;
 }
 
 header h4 {
   color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 3px #616161;
 }
 
 h1 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 3em
+  font-size: 3em;
+  text-shadow: 2px 2px 3px #484848;
+  font-weight: 100;
+  letter-spacing: .07em;
 }
 
-button {
+header button {
   color: #000;
   text-transform: uppercase;
+  background: #ababab;
+  border: none;
+  padding: .5em 1em;
+  font-size: .85em;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #656565;
+  line-height: 1;
+  font-weight: 500;
+  transition: all .5s ease;
+  cursor: pointer;
+  outline: none;
 }
+
+header button:hover {
+  background: #231f20;
+  color: #fff;
+}
+
+
 
 /* #endregion */
 
@@ -99,36 +126,100 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 33.3%;
+  padding-right: 2em;
 }
 
 .goalsBox {
   background-color: #055477;
   border-radius: 5px;
+  padding: 0em.5em;
+  height: 50%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 1px 4px 8px #00000078;
 }
 
 .goalsBox h3 {
-  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 1em;
+  font-size: 1.5em;
+  letter-spacing: .01em;
+  text-shadow: 2px 2px 5px #00000061;
 }
 
-ul.actionList {
+ul.goalsList {
   color: #fff;
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+
+ul.goalsList li {
+  line-height: 1;
+  padding-bottom: 1em;
+  font-weight: 100;
+  text-shadow: 2px 2px 5px #00000036;
+  letter-spacing: .03em;
 }
 
 .actionBox {
+  margin-top: 1em;
   background-color: #03bb8f;
   border-radius: 5px;
+  padding: 0em.5em;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 1px 4px 8px #00000078;
 }
 
 .actionBox h3 {
-  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 1em;
+  font-size: 1.5em;
+  letter-spacing: .01em;
+  text-shadow: 2px 2px 5px #00000061;
 }
 
 ul.actionList {
   color: #fff;
+  padding-left: 0em;
+  list-style-type: disc;
 }
 
 ul.actionList li {
-  text-decoration: underline;
+  line-height: 1;
+  padding-bottom: 1em;
+  font-weight: 100;
+  text-shadow: 2px 2px 5px #00000036;
+  letter-spacing: .03em;
+  list-style-type: none;
+  position: relative;
+}
+
+ul.actionList li i {
+  padding-right: .5em;
+}
+
+ul.actionList li::after {
+  content: "";
+  width: 88%;
+  height: 1px;
+  position: absolute;
+  background: #fff;
+  bottom: 10px;
+  left: 8%;
+}
+
+ul.actionList li:last-child {
+
 }
 
 /* #endregion */
@@ -138,7 +229,8 @@ ul.actionList li {
 /* #region START Boxes Right Styles */
 
 .boxesRight {
-  padding: 1em;
+  width: 66.6%;
+  box-shadow: 1px 4px 8px #00000047;
 }
 
 .calendarBox {
@@ -147,31 +239,41 @@ ul.actionList li {
   flex-direction: column;
   padding: 0 1em 1em 1em;
   border-radius: 5px;
+  height: 100%;
 }
 
 .calControls {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: .5em 0;
+  line-height: 1;
 }
 
 .calControls h2 {
   text-transform: uppercase;
   color: #fff;
+  font-weight: 400;
+  letter-spacing: .05em;
+  font-size: 1.5em;
 }
 
-.calControls span {
+.calControls span i {
   color: #fff;
+  font-size: 2em;
 }
 
 .calendar {
+  height: 90%;
   border-radius: 5px;
-  border: solid 1px #03bb8f;
+  border: solid 2px #03bb8f;
   display: flex;
+  box-shadow: 1px 4px 8px #00000078;
 }
 
 .calColumn {
   width: 20%;
+  height: 100%;
 }
 
 .calColumn:nth-child(odd) {
@@ -185,39 +287,47 @@ ul.actionList li {
 .calHead {
   background: #bcbcbc;
   text-align: center;
+  height: 7%;
 }
 
 .calHead h3 {
   color: #000;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: .3em 0;
+  text-shadow: 0px 0px 1px #00000057;
 }
 
 .calBody {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 1.5em 1em;
+  height: 93%;
 }
 
-.calBody:first-child, .calBody:last-child, {
+.calendar .calColumn:nth-child(1) .calBody, .calendar .calColumn:nth-child(5) .calBody {
   justify-content: space-between;
 }
 
-.calBody:nth-child(2), .calBody:nth-child(4) {
+.calendar .calColumn:nth-child(2) .calBody, .calendar .calColumn:nth-child(4) .calBody {
   justify-content: center;
 }
 
-.calBody:nth-child(3) {
+.calendar .calColumn:nth-child(3) .calBody {
   justify-content: flex-start;
 }
 
 .actionCal {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .actionCal div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .actionCal div img {
@@ -226,10 +336,17 @@ ul.actionList li {
 
 .actionCal div h4 {
   color: #000;
+  font-size: 1.2em;
+  text-shadow: 0px 0px 1px #00000057;
+  font-weight: 600;
 }
 
 .actionCal p {
   color: #000;
+  font-size: .75em;
+  font-weight: 600;
+  padding-top: .5em;
+  text-shadow: 0px 0px 1px #00000057;
 }
 
 
@@ -242,6 +359,8 @@ ul.actionList li {
   background: #bcbcbc;
   display: flex;
   justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 1px 4px 8px #00000078;
 }
 
 .leftIcons {}
@@ -257,9 +376,124 @@ ul.actionList li {
 
 /* #region START Media Queries Styles */
 
-@media only screen and (max-width: 600px) {
-  body {
+@media only screen and (max-width: 500px) {
+  header section {
+    padding: 1.2em 0;
+  }
+  header h4, header button {
+    display: none;
+  }
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px #484848;
+    font-weight: 100;
+    letter-spacing: .07em;
+    text-align: center;
+    margin: auto;
+  }
+  .mainContent {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    justify-content: space-between;
+  }
+  .boxesTop {
+    display: block;
+  }
 
+
+  .boxesLeft {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .goalsBox h3 {
+    padding-bottom: .5em;
+  }
+
+  .goalsBox {
+    padding: 1em .5em;
+  }
+
+  .actionBox h3 {
+    padding-bottom: .5em;
+  }
+
+  .actionBox {
+    padding: 1em .5em;
+    margin-bottom: 2em;
+  }
+
+  .boxesRight {
+    width: 100%;
+  }
+
+  .calendar {
+    display: block;
+    height: auto;
+  }
+
+  .calColumn {
+    width: 100%;
+    height: auto;
+  }
+
+  .calControls span {
+    display: none;
+  }
+
+  .boxesRight {
+    box-shadow: none;
+  }
+
+  .calendarBox {
+    padding: 0 0em 0em 0em;
+  }
+
+  .calControls h2 {
+    margin: auto;
+    text-transform: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: .5em;
+  }
+
+  .actionCal {
+    padding-bottom: 1em;
+  }
+
+  .actionCal p {
+    font-size: 1.2em;
+  }
+
+  .calColumn:nth-child(odd) .calBody {
+        background: #fff;
+
+  }
+
+  .calColumn:nth-child(even) .calBody {
+      background: #d0d0d0;
+}
+
+.calHead {
+  background: #bcbcbc;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+  .boxesBottom {
+    background: none;
+    box-shadow: none;
+  }
+
+  .midIcons {
+    display: none;
   }
 }
 
