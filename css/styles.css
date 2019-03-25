@@ -47,14 +47,14 @@ h1, h2, h3, h4, p, span, ul, li {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  /* height: 98%; */
+  height: 88%;
   justify-content: space-between;
 }
 
 .boxesTop {
   display: flex;
   justify-content: space-between;
-  height: 80%;
+  height: 100%;
   padding-bottom: 2em;
 }
 
@@ -273,7 +273,7 @@ ul.actionList li:last-child {
 
 .calColumn {
   width: 20%;
-  height: 390px;
+  height: 100%;
 }
 
 .calColumn:nth-child(odd) {
@@ -376,9 +376,124 @@ ul.actionList li:last-child {
 
 /* #region START Media Queries Styles */
 
-@media only screen and (max-width: 600px) {
-  body {
+@media only screen and (max-width: 500px) {
+  header section {
+    padding: 1.2em 0;
+  }
+  header h4, header button {
+    display: none;
+  }
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px #484848;
+    font-weight: 100;
+    letter-spacing: .07em;
+    text-align: center;
+    margin: auto;
+  }
+  .mainContent {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    justify-content: space-between;
+  }
+  .boxesTop {
+    display: block;
+  }
 
+
+  .boxesLeft {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .goalsBox h3 {
+    padding-bottom: .5em;
+  }
+
+  .goalsBox {
+    padding: 1em .5em;
+  }
+
+  .actionBox h3 {
+    padding-bottom: .5em;
+  }
+
+  .actionBox {
+    padding: 1em .5em;
+    margin-bottom: 2em;
+  }
+
+  .boxesRight {
+    width: 100%;
+  }
+
+  .calendar {
+    display: block;
+    height: auto;
+  }
+
+  .calColumn {
+    width: 100%;
+    height: auto;
+  }
+
+  .calControls span {
+    display: none;
+  }
+
+  .boxesRight {
+    box-shadow: none;
+  }
+
+  .calendarBox {
+    padding: 0 0em 0em 0em;
+  }
+
+  .calControls h2 {
+    margin: auto;
+    text-transform: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: .5em;
+  }
+
+  .actionCal {
+    padding-bottom: 1em;
+  }
+
+  .actionCal p {
+    font-size: 1.2em;
+  }
+
+  .calColumn:nth-child(odd) .calBody {
+        background: #fff;
+
+  }
+
+  .calColumn:nth-child(even) .calBody {
+      background: #d0d0d0;
+}
+
+.calHead {
+  background: #bcbcbc;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+  .boxesBottom {
+    background: none;
+    box-shadow: none;
+  }
+
+  .midIcons {
+    display: none;
   }
 }
 
